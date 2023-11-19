@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Eliza">
+  <meta name="metadato" content="valor" http-equiv="cabecera">
+  <meta name="keywords" content="">
+  <title>sitio web html</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, rgb(189,189,255), rgb(255,233,236));
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+.active {
+  background-color: #92a4ff;
+}
+
+h1 {
+  background-color: black;
+  padding: 10px;
+  margin: 0;
+  color: #92a4ff;
+}
+input[type=text],
+input[type=email],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #92a4ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #92a4ff;
+}
+
+div.contenedor-formulario {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+
+</style>
+
+
+</head>
+<body>
+  <header>
+    <h1>HTML</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="temas.html">temas</a></li>
+        <li><a href="herrmientas.html">herramientas</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav>
+   </header>
+   <br><br>
+
+
+
+  <div class="contenedor-formulario">
+   <form>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" placeholder="usuarios" required minlength="3" >
+    <label for="apellido">apellido</label>
+    <input type="text" id="apellido" name="apellido" placeholder="apellido" required minlength="3" >
+    <label for="email">email</label>
+    <input type="email" id="email" name="email" placeholder="email" required >
+    <label for="país">país</label>
+
+    <select name="name" id="pais">
+
+    <optgroup label="norte america">
+     <option value="EE UU">EE UU</option>
+     <option value="canada">canada</option>
+    </optgroup>
+
+    <optgroup label="sur america">
+      <option value="colombia">colombia</option>
+      <option value="chile">chile</option>
+      <option value="argentina">argentina</option>
+      <option value="bolivia">bolivia</option>
+    </optgroup>
+
+          <optgroup label="europa">
+            <option value="inglaterra">inglaterra</option>
+            <option value="francia">francia</option>
+            <option value="italia">italia</option>
+            <option value="españa">españa</option>
+          </optgroup>
+
+            <optgroup label="asia">
+              <option value="japon">japon</option>
+              <option value="china">china</option>
+              <option value="korea del sur">korea del sur</option>
+            </optgroup>
+         </select>
+         <br>
+
+         <label for="comentario">comentario</label>
+         <textarea name="comentario" id="comentario" placeholder="comentarios"></textarea>
+
+         <br>
+
+         <label for="motivo">motivo de contacto</label>
+         <input type="radio" id="motivo" name="motivo"><i>informacion</i>
+         <input type="radio" id="motivo" name="motivo"><i>registro</i>
+         <input type="radio" id="motivo" name="motivo"><i>reclamos</i>
+         <input type="radio" id="motivo" name="motivo"><i>felicitaciones</i>
+         <br><br>
+
+
+         <input type="submit" value="enviar" >
+
+        </form>
+   </div>
+
+</body>
+</html>

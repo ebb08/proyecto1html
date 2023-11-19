@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Eliza">
+  <meta name="metadato" content="valor" http-equiv="cabecera">
+  <meta name="keywords" content="">
+  <title>sitio web html</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!--br es un espacio-->
+<!--css se pone en head-->
+<style>
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+  }
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #92a4ff;;
+}
+
+h1 {
+  background-color: black;
+  padding: 10px;
+  margin: 0;
+  color: #92a4ff;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+
+}
+
+
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.image {
+  float: right;
+  width: 15%;
+  margin: 0 0 10px 10px;
+  height: auto;
+}
+
+.image2 {
+  float: left;
+  margin: 0 20px 20px 0;
+  max-width: 20%;
+  height: auto;
+}
+
+.image3 {
+  float: right;
+  margin: 0 20px 20px 0;
+  width: 15%;
+  height: auto;
+}
+
+.image4 {
+  margin: 0 20px 20px 0;
+  width: 70%;
+}
+
+.image44 {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px 20px 0;
+}
+
+.article {
+  float: left;
+  width: 70%;
+  background-color: #FFF;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #CCC;
+}
+
+.footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+
+</style>
+
+</head>
+<body>
+ <header>
+  <h1>HTML</h1>
+  <nav>
+    <ul>
+    <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="temas.html">temas</a></li>
+      <li><a href="herrmientas.html">herramientas</a></li>
+      <li><a href="contacto.html">contacto</a></li>
+    </ul>
+  </nav>
+ </header>
+ <hr>
+ <h2>Historia de HTML</h2>
+ <hr>
+
+ <article class="container">
+   <h3>¿Qué es HTML?</h3>
+   <!-- logo html -->
+ 
+ 
+   <img class="image" src="assets/icons8-html5-48.png" alt="icons8-html5-48">
+  
+
+   <p><b>HTML</b> (Lenguaje de Marcas de Hipertexto, del inglés HyperText Markup Language) es el componente más básico de la Web. Define el significado y la estructura del contenido web. Además de HTML, generalmente se utilizan otras tecnologías para describir la apariencia/presentación de una página web (CSS) o la funcionalidad/comportamiento (JavaScript).
+
+    "Hipertexto" hace referencia a los enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. Los enlaces son un aspecto fundamental de la Web. Al subir contenido a Internet y vincularlo a las páginas creadas por otras personas, te conviertes en un participante activo en la «World Wide Web» (Red Informática Mundial). </p>
+  
+
+    <h3>¿Qué es CSS?</h3>
+    <!-- logo css -->
+    <img class="image2" src="assets/icons8-css-100.png" alt="icons8-css-100">
+    <p><b>CSS:</b> Cascading Style Sheet, más conocido como CSS, es un lenguaje de estilos que, como HTML, tampoco se considera un lenguaje de programación. Es la encargada de separar la parte estructural de la aplicación (que estará en manos de HTML) de la parte estética.</p>
+    <br><br>
+
+    <h3>¿Qué es JAVASCRIPT?</h3>
+    <!-- logo js -->
+    <img class="image3" src="assets/icons8-javascript-48.png" alt="icons8-javascript-48">
+    <p> <b>JAVASCRIPT</b> Para completar la gran tríada del desarrollo front-end, contamos con Javascript, el único lenguaje de programación de las 3 tecnologías mencionadas.
+
+      Puedes ver que ya hemos creado la estructura de la página con HTML y hemos aplicado estilo a los elementos con CSS. Pero, ¿qué pasa con las funcionalidades dinámicas que vemos cuando abrimos un sitio web?, ¿cómo suceden?
+      
+      Esto lo hace Javascript. Agrega movimiento a las páginas web, además de permitir el procesamiento y transformación de los datos enviados y recibidos. Te permite crear contenidos que se actualizan de forma dinámica y animada, dando vida a aplicaciones que antes solo estaban estructuradas estáticamente con HTML.</p>
+
+    <!-- imagen completa -->
+    <div class="image44">
+      <img class="image4" src="assets/completo.png" alt="completo">
+    </div>
+
+<footer class="footer">
+  <p>Derechos reservados &copy; 2023</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Eliza">
+  <meta name="metadato" content="valor" http-equiv="cabecera">
+  <meta name="keywords" content="">
+  <title>sitio web html</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<style>
+  body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(to right, rgb(189,189,255),rgb(255,233,236));
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    
+  li a:hover:not(.active) {
+    background-color: #111;
+    }
+
+    .active {
+      background-color: #92a4ff;
+    }
+
+    h1 {
+      background-color: black;
+      padding: 10px;
+      margin: 0;
+      color: #92a4ff;
+    }
+
+    div.gallery {
+      margin: 5px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 30vw;
+    }
+     div.gallery:hover {
+      border: 1px solid #777;
+     }
+     div.gallery img {
+      width: 100%;
+      height: auto;
+     }
+     div.desc {
+      padding:  15px;
+      text-align: center;
+     }
+     .centrado {
+      display: flex;
+      justify-content: center;
+     }
+
+  .footer {
+    background-color: #333;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+  }
+
+
+</style>
+
+
+</head>
+<body>
+  <header>
+    <h1>HTML</h1>
+    <nav>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="temas.html">temas</a></li>
+        <li><a href="herrmientas.html">herramientas</a></li>
+        <li><a href="contacto.html">contacto</a></li>
+      </ul>
+    </nav>
+   </header>
+   <br><br>
+   <div class="centrado">
+    <!-- video --> <iframe width="560" height="315" src="https://www.youtube.com/embed/XqFR2lqBYPs?si=gLTk3lUpyHzhbLaB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
+   <br><br>
+   <hr>
+   <div class="centrado">
+    <audio src="assets/X2Download.app - Beethoven - Fur Elise (64 kbps).mp3" controls></audio>
+   </div>
+
+   <br><br><br>
+
+
+
+<section class="centrado">
+  <div class="galery">
+    <a href="assets/visual.png" target="_blank"><img class="visual" src="assets/visual.png" alt="visual" width="300"></a>
+       <div class="desc">HTML Visual Studio Code</div>
+  </div>
+
+  <div class="galery">
+    <a href="assets/netbeans.png" target="_blank"><img class="netbeans" src="assets/netbeans.png" alt="netbeans" width="300"></a>
+       <div class="desc">HTML NetBeans</div>
+  </div>
+
+  <div class="galery">
+    <a href="assets/atom.jpg" target="_blank"><img class="atom" src="assets/atom.jpg" alt="atom" width="300"></a>
+       <div class="desc">HTML Atom</div>
+  </div>
+</section>
+   <br><br>
+    
+    <footer class="footer">
+      <p>Derechos reservados &copy; 2023</p>
+    </footer>
+
+
+   
+
+  
+</body>
+</html>
